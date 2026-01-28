@@ -1,0 +1,305 @@
+/* ============================================
+   ABOUT PAGE - Orange Theme
+   ============================================ */
+
+.about-page {
+  padding: 7.5rem 0 5rem;
+  background: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-title {
+  margin: 0;
+  font-size: 3.5rem;
+  line-height: 1.05;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+.about-subtitle {
+  margin: 1rem auto 0;
+  max-width: 700px;
+  color: #6b7280;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-content {
+  margin-bottom: 5rem;
+}
+
+.about-text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-description {
+  margin: 0;
+  color: #374151;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.about-stat-card {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(253, 133, 58, 0.1);
+}
+
+.about-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(253, 133, 58, 0.15);
+  border-color: rgba(253, 133, 58, 0.3);
+}
+
+.about-stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fd853a;
+  margin-bottom: 0.5rem;
+}
+
+.about-stat-label {
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* Skills Section */
+.about-skills {
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.skill-item {
+  transition: transform 0.2s ease;
+}
+
+.skill-item:hover {
+  transform: translateX(5px);
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.skill-name {
+  font-weight: 700;
+  color: #111827;
+  font-size: 1.05rem;
+}
+
+.skill-percentage {
+  font-weight: 700;
+  color: #fd853a;
+  font-size: 1rem;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #fd853a 0%, #ff9f5a 100%);
+  border-radius: 999px;
+  transition: width 1s ease;
+  box-shadow: 0 2px 8px rgba(253, 133, 58, 0.3);
+}
+
+/* Timeline Section */
+.about-timeline-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.timeline-column {
+  width: 100%;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #fd853a 0%, rgba(253, 133, 58, 0.3) 100%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  transition: transform 0.2s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(5px);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2.5rem;
+  top: 0.5rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #fd853a;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 3px rgba(253, 133, 58, 0.2);
+  z-index: 2;
+}
+
+.timeline-content {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 3px solid #fd853a;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  box-shadow: 0 8px 24px rgba(253, 133, 58, 0.15);
+  border-left-color: #ff9f5a;
+}
+
+.timeline-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.timeline-subtitle {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fd853a;
+}
+
+.timeline-institution,
+.timeline-description {
+  margin: 0 0 0.75rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.timeline-year {
+  display: inline-block;
+  background: rgba(253, 133, 58, 0.1);
+  color: #fd853a;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 968px) {
+  .about-timeline-section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 6rem 0 4rem;
+  }
+
+  .about-container {
+    padding: 0 1rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-stat-value {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+}

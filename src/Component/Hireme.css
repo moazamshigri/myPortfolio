@@ -1,0 +1,218 @@
+/* ============================================
+   HIRE ME SECTION (matches Frame design)
+   ============================================ */
+
+.hireme-section {
+  background: #f3f4f6;
+  padding: 4.5rem 0;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.hireme-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hireme-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+/* Left */
+.hireme-image {
+  position: relative;
+  flex: 0 0 44%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 420px;
+}
+
+.hireme-image-blob {
+      position: absolute;
+    inset: 18% 16% 2% 12%;
+    background: #fd853a;
+    border-radius: 51% 64% 38% 52% / 62% 42% 58% 38%;
+    filter: saturate(1.05);
+}
+
+.hireme-person {
+  position: relative;
+  z-index: 2;
+  width: 298px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0px 293px 303px;
+}
+
+/* Right */
+.hireme-content {
+  flex: 1;
+  max-width: 560px;
+}
+
+.hireme-title {
+  margin: 0 0 1rem;
+  font-size: 3.25rem;
+  line-height: 1.05;
+  font-weight: 800;
+  color: #1f2937;
+  letter-spacing: -0.02em;
+}
+
+.hireme-accent {
+  color: #fd853a;
+}
+
+.hireme-description {
+  margin: 0 0 2rem;
+  color: #6b7280;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+.hireme-stats {
+  display: flex;
+  gap: 4.5rem;
+  margin: 0 0 2.25rem;
+}
+
+.hireme-stat-value {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.hireme-stat-label {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.hireme-btn {
+  background: rgba(255, 255, 255, 0.8);
+  color: #111827;
+  border: 2px solid #1f2937;
+  padding: 1.1rem 3.25rem;
+  border-radius: 18px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.hireme-btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.hireme-btn:active {
+  transform: translateY(0);
+}
+
+.hireme-btn:focus-visible {
+  outline: 2px solid #fd853a;
+  outline-offset: 3px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .hireme-grid {
+    gap: 2.5rem;
+  }
+
+  .hireme-title {
+    font-size: 2.75rem;
+  }
+
+  .hireme-image {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hireme-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hireme-image {
+    flex: none;
+    width: 100%;
+    min-height: 340px;
+  }
+
+  .hireme-image-blob {
+    /* inset: 12% 18% 8% 18%; */
+        position: absolute;
+    inset: 23% 3% 2% -2%;
+    background: #fd853a;
+    border-radius: 56% 52% 41% 52% / 62% 42% 58% 38%;
+    filter: saturate(1.05);
+  }
+
+  .hireme-content {
+    max-width: 680px;
+  }
+
+  .hireme-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hireme-stats {
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .hireme-section {
+    padding: 3.25rem 0;
+  }
+
+  .hireme-container {
+    padding: 0 1rem;
+  }
+
+  .hireme-title {
+    font-size: 2.1rem;
+  }
+
+  .hireme-description {
+    font-size: 0.98rem;
+  }
+
+  .hireme-stat-value {
+    font-size: 1.9rem;
+  }
+
+  .hireme-stats {
+    gap: 2rem;
+  }
+
+  .hireme-btn {
+    width: 100%;
+    max-width: 320px;
+    padding: 1rem 2.5rem;
+  }
+
+  .hireme-image {
+    min-height: 300px;
+  }
+}
