@@ -199,6 +199,18 @@ export const projectsData = {
   github: "https://github.com/moazamshigri/",
 },
 
+  {
+  id: 6,
+  title: "Buy me a toffee",
+  category: "Web Development",
+  description:
+    "A responsive web application that allows users to make donations and support creators.",
+  image: "buymeatoffee.png",
+  technologies: ["React","Node js", "Express", "Stripe Payment","MongoDB", "Postman"],
+  link: "#",
+  github: "https://github.com/moazamshigri/",
+},
+
   ],
 };
 
